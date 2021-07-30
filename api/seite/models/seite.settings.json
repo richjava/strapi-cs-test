@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seites",
+  "info": {
+    "name": "Seite"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Abscract": {
+      "type": "richtext"
+    },
+    "Volltext": {
+      "type": "richtext"
+    },
+    "SeitenHeaderBild": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,2 +1,3 @@
-# strapi-cs-test
-Created with CodeSandbox
+# Strapi application
+
+A quick description of your strapi application
